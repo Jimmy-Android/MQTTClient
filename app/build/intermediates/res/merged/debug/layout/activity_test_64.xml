@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接"
+        android:id="@+id/connect"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="断开连接"
+        android:id="@+id/unconnect"
+        android:layout_alignBottom="@+id/connect"
+        android:layout_toEndOf="@+id/connect"
+        android:layout_marginStart="70dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="向mqtt发送数据"
+        android:id="@+id/sendtomqttclient"
+        android:layout_below="@+id/connect"
+        android:layout_alignStart="@+id/connect"
+        android:layout_marginTop="72dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收mqttclient的数据"
+        android:id="@+id/recive_from_mqtt_client"
+        android:layout_below="@+id/sendtomqttclient"
+        android:layout_alignStart="@+id/sendtomqttclient"
+        android:layout_marginTop="64dp" />
+</RelativeLayout><!-- From: file:/E:/Documents/MQTTClient/MQTT/app/src/main/res/layout/activity_test_64.xml -->

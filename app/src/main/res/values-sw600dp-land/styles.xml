@@ -1,0 +1,7 @@
+<resources>
+
+
+<style name="AppSetTheme" parent="android:Theme.Holo.Light">  
+    <item name="@android:attr/actionBarSize">37.5dp</item>  
+</style>  
+</resources>

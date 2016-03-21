@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\Documents\MQTTClient\MQTT\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="F:\Documents\MQTTClient\MQTT\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-9e55ce88e98a053d5d7a0f13ea95f891a2db5c86.jar" />
+    </item>
+    <item
+        jar="F:\Documents\MQTTClient\MQTT\app\libs\mqtt-client-0.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="70efcaca7d1c70ad5dc716a124f2861f07fe27bf">
+        <dex dex="F:\Documents\MQTTClient\MQTT\app\build\intermediates\pre-dexed\debug\mqtt-client-0.4.0-b3b440f76d4d9b9e690f428ff35ecd333a7226c1.jar" />
+    </item>
+    <item
+        jar="F:\Documents\MQTTClient\MQTT\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="F:\Documents\MQTTClient\MQTT\app\build\intermediates\pre-dexed\debug\classes-0680853108bf362e67167afd8f8e0e564f386341.jar" />
+    </item>
+    <item
+        jar="F:\Documents\MQTTClient\MQTT\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="F:\Documents\MQTTClient\MQTT\app\build\intermediates\pre-dexed\debug\classes-4abd73817944ff0381277e9bc5a741c69ff66094.jar" />
+    </item>
+    <item
+        jar="F:\Sdk\sdk2\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="F:\Documents\MQTTClient\MQTT\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-ad9003a73286dc04403064810f0f7d1492bb0fd0.jar" />
+    </item>
+    <item
+        jar="F:\Documents\MQTTClient\MQTT\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="F:\Documents\MQTTClient\MQTT\app\build\intermediates\pre-dexed\debug\gson-2.3.1-f5799b34588c6738db7760fdbaf4353fef8159fd.jar" />
+    </item>
+    <item
+        jar="F:\Documents\MQTTClient\MQTT\app\libs\d2xx.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="549d88cce99830dc2ae951a13d5a8b897362351b">
+        <dex dex="F:\Documents\MQTTClient\MQTT\app\build\intermediates\pre-dexed\debug\d2xx-77bb56e1eda96280f6a173ff4b724a9a57a7df71.jar" />
+    </item>
+
+</items>

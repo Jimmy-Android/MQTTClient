@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="100dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="100dp">
+
+        <TextView
+            android:id="@+id/lock"
+            style="@style/style_text_light"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/lock_t"
+            android:tag="lock"
+            android:text="解锁" />
+
+        <Button
+            android:id="@+id/jump_to_heater"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/lock"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="跳转"
+            />
+
+
+        <TextView
+            android:id="@+id/dew"
+            style="@style/style_text_light"
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/remove"
+            android:tag="on"
+            android:text="除露" />
+
+        <TextView
+            android:id="@+id/light"
+            style="@style/style_text_light"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:drawableRight="@drawable/lights_on"
+            android:tag="on"
+            android:text="照明" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eee" />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/style_text_name"
+                android:drawableLeft="@drawable/snowt"
+                android:text="冷冻区" />
+
+            <TextView
+                android:id="@+id/text_temper_ld"
+                style="@style/style_temper"
+                android:text="23" />
+
+            <TextView
+                style="@style/style_temper_util"
+                android:layout_toEndOf="@id/text_temper_ld"
+                android:layout_alignBottom="@id/text_temper_ld"
+                android:textSize="30dp"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/ly_set_ld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible">
+
+                <EditText
+                    android:id="@+id/edit_ld"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:text="-15"
+                    android:textColor="#535353"
+                    android:digits="-0123456789"
+
+                    android:textSize="20dp" />
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn_set_temp_ld_ok"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@id/edit_ld"-->
+                    <!--android:background="#00000000"-->
+                    <!--android:text="确定" />-->
+            </RelativeLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_set_temp_ld"
+                style="@style/style_btn_set_temp"
+                android:text="设置温度:-21℃"
+                android:background="#00000000"
+
+                android:layout_marginRight="50dp"/>
+            <Button
+                android:id="@+id/ld_add"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="加"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"/>
+            <Button
+                android:id="@+id/ld_jian"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="减"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:layout_toLeftOf="@id/btn_set_temp_ld"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="00dp"
+            android:background="#eee" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                style="@style/style_text_name"
+                android:drawableLeft="@drawable/wine"
+                android:text="红酒区" />
+
+            <TextView
+                android:id="@+id/text_temper_win"
+                style="@style/style_temper2"
+                android:text="23" />
+
+            <TextView
+                style="@style/style_temper_util"
+                android:layout_alignBottom="@id/text_temper_win"
+                android:layout_toRightOf="@id/text_temper_win" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#eee" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                style="@style/style_text_name"
+                android:drawableLeft="@drawable/i96"
+                android:text="冷藏区" />
+
+            <TextView
+                android:id="@+id/text_temper_lc"
+                style="@style/style_temper"
+                android:text="23" />
+
+            <TextView
+                style="@style/style_temper_util"
+                android:layout_marginTop="40dp"
+                android:layout_alignBottom="@id/text_temper_lc"
+                android:textSize="30dp"
+
+                android:layout_toEndOf="@id/text_temper_lc"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/ly_set_lc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+
+                android:visibility="invisible">
+
+                <EditText
+                    android:id="@+id/edit_lc"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="10"
+                    android:textColor="#535353"
+                    android:digits="0123456789"
+
+                    android:textSize="20dp" />
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn_set_temp_lc_ok"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@id/edit_lc"-->
+                    <!--android:background="#00000000"-->
+                    <!--android:text="确定" />-->
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_set_temp_lc"
+                style="@style/style_btn_set_temp"
+                android:text="设置温度:1℃"
+                android:layout_marginRight="50dp"
+                android:background="#00000000"/>
+            <Button
+                android:id="@+id/lc_add"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="加"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"/>
+            <Button
+                android:id="@+id/lc_jian"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="减"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:layout_toLeftOf="@id/btn_set_temp_lc"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#eee" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                style="@style/style_text_name"
+                android:drawableLeft="@drawable/applt"
+                android:text="水果区" />
+
+            <TextView
+                android:id="@+id/text_temper_frt"
+                style="@style/style_temper2"
+                android:text="23" />
+
+            <TextView
+                style="@style/style_temper_util"
+                android:layout_marginTop="20dp"
+                android:layout_alignBottom="@id/text_temper_frt"
+
+                android:layout_toRightOf="@id/text_temper_frt" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="100dp">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true">
+
+            <com.eastsoft.mqtt.cloud2.util.CustomNumberPicker
+                android:id="@+id/picker_ld"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+
+                >
+
+            </com.eastsoft.mqtt.cloud2.util.CustomNumberPicker>
+            <Button
+                android:id="@+id/btn_set_temp_ld_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/picker_ld"
+                android:text="确定"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true">
+
+            <com.eastsoft.mqtt.cloud2.util.CustomNumberPicker
+                android:id="@+id/picker_lc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                >
+
+            </com.eastsoft.mqtt.cloud2.util.CustomNumberPicker>
+            <Button
+                android:id="@+id/btn_set_temp_lc_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/picker_ld"
+                android:text="确定"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/Documents/MQTTClient/MQTT/app/src/main/res/layout/gradevin_layout.xml -->

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="打开串口" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/textdata"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/btn_open"-->
+    <!--android:layout_weight="0.06"-->
+    <!--android:text="dataText" />-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout12"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_open"
+        android:layout_marginStart="30dp">
+
+        <ImageView
+            android:id="@+id/light_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/light_on"
+            android:clickable="true"
+            android:tag="on" />
+
+        <TextView
+            android:id="@+id/light_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/light_on"
+            android:layout_centerHorizontal="true"
+            android:text="mac" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="400dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="500dp"
+        android:listSelector="#00000000" />
+
+    <RelativeLayout
+        android:id="@+id/attr_ly"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_open"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/text_attr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="属性" />
+
+        <EditText
+            android:id="@+id/editattr"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/text_attr"
+            android:text="63" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnattr"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attr_ly"
+        android:layout_marginLeft="16dp"
+        android:text="确定" />
+
+    <RelativeLayout
+        android:id="@+id/ly64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnattr"
+        android:layout_margin="16dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:text="搜索设备" />
+        <TextView
+            android:id="@+id/text_link"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_search"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="未连接" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout><!-- From: file:/E:/Documents/MQTTClient/MQTT/app/src/main/res/layout/activity_6364.xml -->

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/text_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:text="text_mac"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_depth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_mac"
+        android:layout_marginLeft="250dp"
+        android:layout_gravity="center_horizontal"
+        android:text="depth"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_netstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_mac"
+
+        android:layout_marginTop="20dp"
+        android:text="netstate"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_depth"
+        android:layout_alignTop="@+id/text_netstate"
+
+        android:text="mode"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_attr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_netstate"
+        android:layout_marginTop="20dp"
+        android:text="attr"
+        android:textSize="20dp" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="300dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原密钥"
+        android:textSize="20dp"
+
+        android:id="@+id/old"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新密钥"
+        android:id="@+id/textView"
+        android:layout_marginTop="51dp"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/old"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_old"
+        android:layout_alignTop="@+id/old"
+        android:layout_toEndOf="@+id/old" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_new"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="取消"
+        android:id="@+id/btn_cancel"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/edit_new" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="确定"
+        android:id="@+id/btn_ok"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/edit_new"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更改密钥"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_alignEnd="@+id/btn_ok" />
+
+</RelativeLayout><!-- From: file:/E:/Documents/MQTTClient/MQTT/app/src/main/res/layout/dialog.xml -->
